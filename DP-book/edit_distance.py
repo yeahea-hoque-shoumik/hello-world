@@ -11,6 +11,12 @@ def solve(s1, s2):
             return calc(i + 1, j + 1)
         return 1 + min(calc(i + 1, j), calc(i + 1, j + 1), calc(i, j + 1))
     return calc(0, 0)
+# def solve_dp(s1, s2):
+#     l1 = len(s1)
+#     l2 = len(s2)
+#     for i in range(l1):
+#         for j in range(l2):
+#             if s1[i] == s2[j]:
 
 
 if __name__ == '__main__':
