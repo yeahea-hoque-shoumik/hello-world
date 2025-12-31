@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-import pdfkit
+from weasyprint import HTML
 def fetch_chapter(chapter_number):
     # URL of the webpage
     url = f"https://xperimentalhamid.com/novels/millionaire-son-in-law-novel-chapter-{chapter_number}/"
